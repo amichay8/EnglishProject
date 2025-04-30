@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: var(--image);
+    background-size: cover;
+  }
+
+  :root {
+    --primary-color: rgb(228, 242, 255);
+    --secondary-color: rgb(0, 115, 255);
+    --text-color: rgb(0, 0, 0);
+    --color: rgb(248, 248, 255);
+    --third-color: rgb(46, 46, 46);
+    --image: url('./Photos/Background.png');
+  }
+
+  .night-theme {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(0, 60, 134);
+    --text-color: rgb(228, 242, 255);
+    --color: rgb(248, 248, 255);
+    --third-color: rgb(221, 221, 221);
+    --image: url('./Photos/Background Night.png');
+  }
+
+  .zoom {
+    transform: scale(0.9);
+  }
+
+  .Start {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Middle {
+    display: grid;
+    display: flex;
+    align-items: center;
+  }
+
+  .P {
+    display: grid;
+    grid-template: 1fr 1fr;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .MainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 360px;
+  }
+
+  .Info {
+    background-color: var(--primary-color);
+    border-radius: 5%;
+  }
+
+  .Section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+  }
+
+  .Section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+  }
+
+  .Page:hover {
+    border: var(--secondary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px var(--third-color);
+  }
+
+  .Page {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 5%;
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .img {
+    border-radius: 5%;
+    width: 100%;
+  }
+
+  .img1 {
+    border-radius: 40%;
+    width: 15%;
+    margin-bottom: 5%;
+    margin-left: 70%;
+  }
+
+  video {
+    width: 50%;
+    align-content: center;
+    border-radius: 2%;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+  }
+
+  h5 {
+    margin: 0;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+  }
+
+  h6 {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color);
+  }
+
+  .h6 {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--third-color);
+  }
+
+  h1 {
+    margin-left: -15%;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+  }
+
+  .but {
+    border-radius: 25%;
+    background-color: rgb(228, 242, 255);
+    border-color: rgb(0, 255, 170);
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .but:hover {
+    border-color: rgb(11, 135, 0);
+    background-color: rgb(0, 115, 255);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px var(--third-color);
+  }
+
+  .but2 {
+    border-radius: 25%;
+    background-color: rgb(228, 242, 255);
+    border-color: rgb(0, 255, 170);
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .but2:hover {
+    border-color: rgb(11, 135, 0);
+    background-color: rgb(0, 115, 255);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px var(--third-color);
+  }
+
+  .but3 {
+    border-radius: 25%;
+    background-color: rgb(228, 242, 255);
+    border-color: rgb(0, 255, 170);
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .but3:hover {
+    border-color: rgb(11, 135, 0);
+    background-color: rgb(0, 115, 255);
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px var(--third-color);
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-left: 1%;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80%;
+    color: var(--text-color);
+  }
+
+  .img2 {
+    width: 40px;
+    cursor: pointer;
+  }

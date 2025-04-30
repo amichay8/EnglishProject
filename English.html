@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info about Teachers</title>
+  <link rel="stylesheet" href="Style 1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Tagesschrift&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Leckerli+One&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="zoom">
+    <div class="MainContainer">
+        <div class="Section">
+            <div id="Liora" class="Page">
+                <img class="img" src="./Photos/Liora.jpg">
+                <h2>Liora</h2>
+                <h5>History Teacher</h5>
+            </div>
+            <div id="Anastasia" class="Page">
+                <img class="img" src="./Photos/Anastasia.jpg">
+                <h2>Anastasia</h2>
+                <h5>English Teacher</h5>
+            </div>
+            <div id="Yulia" class="Page">
+                <img class="img" src="./Photos/Yulia.jpg">
+                <h2>Yulia</h2>
+                <h5>Math Teacher</h5>
+            </div>
+            <div id="Batia" class="Page">
+                <img class="img" src="./Photos/Batia.jpg">
+                <h2>Batia</h2>
+                <h5>Sport Teacher</h5>
+            </div>
+            <div id="Yevgeny" class="Page">
+                <img class="img" src="./Photos/Yevgeny.jpg">
+                <h2>Yevgeny</h2>
+                <h5>GYM Teacher</h5>
+            </div>
+        </div>
+        <div class="Section2">
+            <div id="Hiba" class="Page">
+                <img class="img" src="./Photos/Hiba.jpg">
+                <h2>Hiba</h2>
+                <h5>Arabic Teacher</h5>
+            </div>
+            <div id="Sigal" class="Page">
+                <img class="img" src="./Photos/Sigal.jpg">
+                <h2>Sigal</h2>
+                <h5>Science Teacher</h5>
+            </div>
+            <div id="Dalit" class="Page">
+                <img class="img" src="./Photos/Dalit.jpg">
+                <h2>Dalit</h2>
+                <h5>Citizenship Teacher</h5>
+            </div>
+            <div id="Bar" class="Page">
+                <img class="img" src="./Photos/Bar.jpg">
+                <h2>Bar</h2>
+                <h5>Bible Teacher</h5>
+            </div>
+            <div id="Lida" class="Page">
+                <img class="img" src="./Photos/Lida.jpg">
+                <h2>Lida</h2>
+                <h5>Physics Teacher</h5>
+            </div>
+            <div id="Helen" class="Page">
+                <img class="img" src="./Photos/Helen.jpg">
+                <h2>Helen</h2>
+                <h5>Literature Teacher</h5>
+            </div>
+        </div>
+        <h6>If there is any problem with the quality of the videos, it is not the website makers fault.</h6>
+        <div>
+            <img class="img2" id="icon" src="./Photos/Night.jpg">
+        </div>
+        <h6>Made by Amichay Kreimer in 2025™</h6>
+    </div>
+</div>    
+<script src="Code.js"></script>
+
+<script>
+    const icon = document.getElementById("icon");
+
+    icon.onclick = function() {
+        document.body.classList.toggle("night-theme");
+        if (document.body.classList.contains("night-theme")) {
+            icon.src = "./Photos/Day.jpg";
+        }
+        else {
+            icon.src = "./Photos/Night.jpg";
+        }
+    }
+</script>
+</body>
